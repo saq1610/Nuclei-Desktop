@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+		<meta charset="utf-8">
+
+		<meta name="description" content="Use your shield to defend the tiny Nuclei from the evil red organisms!" />
+		<meta name="author" content="Saqeef Iqbal" />
+
+		<meta http-equiv="X-UA-Compatible" content="chrome=1">
+
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<meta name="viewport" content="width = 450">
+
+        <title>Nuclei - a game built in HTML5</title>
+
+		<link href="css/reset.css" rel="stylesheet" media="screen" />
+		<link href="css/main.css" rel="stylesheet" media="screen" />
+
+		<link href='http://fonts.googleapis.com/css?family=Molengo' rel='stylesheet' type='text/css'>
+
+    </head>
+    <body>
+    	<header>
+    		<h1>Nuclei</h1>
+    		<span class="header-instruction">Expand for more info.</span>
+
+    		<!-- The extra content that can be expanded -->
+    		<div class="extra">
+
+    			<!-- Description of the Game -->
+    			<section id="about">
+    				<h3>About</h3>
+	    			<p>
+						Your objective is to protect the tiny Nuclei from the<br/>
+						evil red organisms while letting green energy ones through.<br/>
+						Press & hold <b>SPACE</b> for a temporary shield.
+	    			</p>
+	    			<p class="credits">
+	    				Created by <a href="http://saq1610.github.io/">Saqeef Iqbal</a> | <a href="http://twitter.com/16saqeef">@16saqeef</a>
+    				</p>
+	    		</section>
+
+	    		<!-- Social sharing -->
+	    		<section id="share">
+	    			<h3>Share</h3>
+					<iframe id="facebook-button" src="http://www.facebook.com/plugins/like.php?href=http%3A%2F%2Fgithub.com%2Fsaq1610%2Fhtml5%2FNuclei%2F01%2F&amp;layout=box_count&amp;show_faces=false&amp;width=55&amp;action=like&amp;font=arial&amp;colorscheme=light&amp;height=60" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:55px; height:60px;" allowTransparency="true"></iframe>
+					<div id="retweet-button">
+						<a href="http://twitter.com/share" class="twitter-share-button" data-url="https://github.com/saq1610/Nuclei" data-text="Nuclei - a defensive game built with HTML5 by @16saqeef" data-count="vertical" data-related="saq1610">Tweet</a>
+						<script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script>
+					</div>
+					<div id="flattr-button">
+	    				<a class="FlattrButton" style="display:none;" href="https://github.com/saq1610/Nuclei"></a>
+	    			</div>
+	    		</section>
+	    		</section>
+
+    		</div>
+    	</header>
+
+		<div id="status" class="ui"></div>
+			<div id="panels">
+			<div id="message" class="ui">
+				<h2 id="title">Nuclei</h2>
+				<ul>
+					<li>1. Protect the Nuclei and make it grow into a mature Nucleus!.</li>
+					<li>2. Gather energy (green dots).</li>
+					<li>2. Hold SPACE for shield (depletes energy).</li>
+				</ul>
+				<a href="#" id="startButton">Start</a>
+			</div>
+		</div>
+
+		<canvas id="world">
+			<p class="no-canvas">
+				You need a <a href="http://browsehappy.com">better browser</a> to play. You can thank me later.
+			</p>
+		</canvas>
+		<canvas id="background"></canvas>
+
+		<script src="js/header.js"></script>
+		<script src="js/nuclei.js"></script>
+
+
+		<script type="text/javascript">
+		/* <![CDATA[ */
+		    (function() {
+		        var s = document.createElement('script'), t = document.getElementsByTagName('script')[0];
+		        s.type = 'text/javascript';
+		        s.async = true;
+		        s.src = 'http://api.flattr.com/js/0.6/load.js?mode=auto';
+		        t.parentNode.insertBefore(s, t);
+		    })();
+		/* ]]> */
+		</script>
+
+    </body>
+</html>
